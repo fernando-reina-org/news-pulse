@@ -40,7 +40,7 @@ export default function Home() {
           {sources.map(src => (
             <button
               key={src.id}
-              className={`px-4 py-2 rounded border text-sm font-medium transition-colors ${selectedSource === src.id ? 'bg-blue-600 text-white' : 'bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-700 hover:bg-blue-100 dark:hover:bg-blue-800'}`}
+              className={`px-4 py-2 rounded border text-sm font-medium transition-colors ${selectedSource === src.id ? 'bg-green-600 text-white' : 'bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-700 hover:bg-blue-100 dark:hover:bg-green-800'}`}
               onClick={() => setSelectedSource(src.id)}
             >
               {src.name}
